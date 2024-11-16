@@ -1,0 +1,44 @@
+# 1. Membuat list dengan 5 elemen
+print("1. Membuat list dengan 5 elemen:")
+list_A = [50, 60, 70, 80, 90]
+print("List A:", list_A)
+print()
+
+# 2. Akses list
+print("2. Akses list:")
+# Tampilkan elemen ke 3
+print("Elemen ke 3:", list_A[2])
+# Ambil nilai elemen ke 2 sampai ke 4
+print("Elemen ke 2 sampai ke 4:", list_A[1:4])
+# Ambil elemen terakhir
+print("Elemen terakhir:", list_A[-1])
+print()
+
+# 3. Ubah elemen list
+print("3. Ubah elemen list:")
+# Ubah elemen ke 4 dengan nilai lainnya
+list_A[3] = 75
+print("Setelah mengubah elemen ke 4:", list_A)
+# Ubah elemen ke 4 sampai elemen terakhir
+list_A[3:] = [75, 95]
+print("Setelah mengubah elemen ke 4 sampai akhir:", list_A)
+print()
+
+# 4. Tambah elemen list
+print("4. Tambah elemen list:")
+# Ambil 2 bagian dari list pertama (A) dan jadikan list ke 2 (B)
+list_B = list_A[0:2]
+print("List B yang diambil dari 2 bagian list A:", list_B)
+
+# Tambah list B dengan string
+list_B.append("hiii bos")
+print("List B setelah ditambah string:", list_B)
+
+# Tambah list B dengan 3 nilai
+list_B.extend([90, 100, 110])
+print("List B setelah ditambah 3 nilai:", list_B)
+
+# Gabungkan list B dengan list A
+list_gabungan = list_B + list_A
+print("Hasil penggabungan list B dengan list A:", list_gabungan)
+
